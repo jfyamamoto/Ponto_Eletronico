@@ -1,0 +1,41 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.container {
+  max-width: 730px;
+
+}
+
+.row{
+  margin-bottom: 20px;
+}
+
+.titulo {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#box_alertas{
+  z-index: 99;
+    width: 300px;
+    height: 0px;
+    position: fixed;
+    top: 150px;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -100px;
+}
+
+#box_alertas .alert{
+  margin-bottom: 10px;
+  padding: 7px;
+}
+
+#botao_ajuda {
+  margin-top: 15px;
+  border-radius: 50%;
+}
