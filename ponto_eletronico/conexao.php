@@ -4,7 +4,7 @@
 
     $host = 'localhost';
     $user = 'root';
-    $senha = '0420';
+    $senha = '';
     $bd = 'db_ponto_eletronico';
 
     $conexao = mysqli_connect($host, $user, $senha, $bd);

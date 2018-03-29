@@ -59,7 +59,7 @@
                     </div>
                 </div>
                 <div class="col-sm-3">
-                    <h4>Horário de Chegada (Almoço):</h4>
+                    <h4>Horário de Chegada(Almoço):</h4>
                     <div class="form-group">
                         <div class='input-group date'>
                             <input name="hr_chegada_almoco" type='text' class="form-control input-lg" />

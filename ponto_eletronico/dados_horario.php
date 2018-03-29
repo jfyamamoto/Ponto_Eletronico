@@ -16,7 +16,7 @@
     //Inserindo dados do Horario de Funcionario no Banco
 
     $sql = "INSERT INTO tb_expediente (`hr_entrada`, `hr_saida`, `hr_saida_almoco`, `hr_chegada_almoco`) 
-VALUES ('$hrEntrada','$hrSaida', '$hrSaidaAlmoco', '$hrChegadaAlmoco')";
+    VALUES ('$hrEntrada','$hrSaida', '$hrSaidaAlmoco', '$hrChegadaAlmoco')";
      
     $query = mysqli_query($conexao, $sql);
         

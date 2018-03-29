@@ -13,6 +13,8 @@
     $recIdade = $_POST['idade'];
     $recTelefone = $_POST['telefone'];    
     $recCargo = $_POST['cargo'];
+        
+        
     
     //Inserindo dados do Cadastro de Funcionario no Banco
 
@@ -21,7 +23,7 @@
      
     $query = mysqli_query($conexao, $sql);
 
-
+    echo $query;
         
     //SCRIPTS DE ALERTA
     
