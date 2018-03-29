@@ -1,5 +1,6 @@
 <?php
 include 'dado_relatorio.php';
+include 'conexao.php';
 ?>
 
 <!DOCTYPE html>

@@ -7,6 +7,7 @@
 
     //Parametros do Horario do Funcionario
 
+    $idExpediente = $_POST['id_expediente'];
     $hrEntrada = $_POST['hr_entrada'];
     $hrSaida = $_POST['hr_saida'];
     $hrSaidaAlmoco = $_POST['hr_saida_almoco'];
@@ -15,8 +16,8 @@
         
     //Inserindo dados do Horario de Funcionario no Banco
 
-    $sql = "INSERT INTO tb_expediente (`hr_entrada`, `hr_saida`, `hr_saida_almoco`, `hr_chegada_almoco`) 
-    VALUES ('$hrEntrada','$hrSaida', '$hrSaidaAlmoco', '$hrChegadaAlmoco')";
+    $sql = "INSERT INTO tb_expediente (`id_expediente`,`hr_entrada`, `hr_saida`, `hr_saida_almoco`, `hr_chegada_almoco`) 
+    VALUES ('$idExpediente', '$hrEntrada','$hrSaida', '$hrSaidaAlmoco', '$hrChegadaAlmoco')";
      
     $query = mysqli_query($conexao, $sql);
         
@@ -24,7 +25,7 @@
         
     //SCRIPTS DE ALERTA
         
-    if($sql == $sql){            //Mensagem de Alerta de Horario do Funcionario
+    if($sql){            //Mensagem de Alerta de Horario do Funcionario
         echo '<script>alert("Horario registrado com sucesso!");
                 window.location.href = "relatorio.php";
                 </script>';

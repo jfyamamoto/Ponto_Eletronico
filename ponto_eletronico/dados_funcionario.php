@@ -23,12 +23,11 @@
      
     $query = mysqli_query($conexao, $sql);
 
-    echo $query;
         
     //SCRIPTS DE ALERTA
     
 
-    if($sql == $sql){       //Mensagem de Alerta se Funcionario foi Cadastrado
+    if($sql){       //Mensagem de Alerta se Funcionario foi Cadastrado
         
         echo '<script>alert("Funcionario cadastrado com sucesso!");
                 window.location.href = "ponto_eletronico_funcionario.php";
