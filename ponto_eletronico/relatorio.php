@@ -33,15 +33,15 @@ include 'dado_relatorio.php';
     			<h3>Dados do funcionário</h3>
     			<div class="col-sm-4">
     				<h4>Matricula:</h4>
-    				<input name="matricula" value="<?php echo $buscaDados['matricula']?>" type='text' class="form-control input-lg"/>
+    				<input name="matricula" value="<?php echo $recMatricula['matricula']?>" type='text' class="form-control input-lg"/>
     			</div>
                 <div class="col-sm-4">
     				<h4>Nome Completo:</h4>
-    				<input name="nome" value="<?php echo $buscaDados['nome']?>" type='text' class="form-control input-lg" />
+    				<input name="nome" value="<?php echo $recNome['nome']?>" type='text' class="form-control input-lg" />
     			</div>
                 <div class="col-sm-4">
                     <h4>Cargo:</h4>
-                    <input name="cargo" value="<?php echo $buscaDados['cargo']?>" type='text' class="form-control input-lg"/>
+                    <input name="cargo" value="<?php echo $recCargo['cargo']?>" type='text' class="form-control input-lg"/>
                 </div>
             </div>
         
@@ -50,7 +50,7 @@ include 'dado_relatorio.php';
                     <h4>Horário de Entrada:</h4>
                     <div class="form-group">
                         <div class='input-group date'>
-                            <input name="hr_entrada" value="<?php echo $buscaDados['hr_entrada']?>" type='text' class="form-control input-lg" />
+                            <input name="hr_entrada" value="<?php echo $hrEntrada['hr_entrada']?>" type='text' class="form-control input-lg" />
                         </div>
                     </div>
 			     </div>
@@ -58,7 +58,7 @@ include 'dado_relatorio.php';
                     <h4>Horário de Saida:</h4>
                     <div class="form-group">
                         <div class='input-group date'>
-                            <input name="hr_saida"  value="<?php echo $buscaDados['hr_saida']?>" type='text' class="form-control input-lg" />
+                            <input name="hr_saida"  value="<?php echo $hrSaida['hr_saida']?>" type='text' class="form-control input-lg" />
                         </div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@ include 'dado_relatorio.php';
                     <h4>Horário de Saida (Almoço):</h4>
                     <div class="form-group">
                         <div class='input-group date'>
-                            <input name="hr_saida_almoco"  value="<?php echo $buscaDados['hr_saida_almoco']?>" type='text' class="form-control input-lg" />
+                            <input name="hr_saida_almoco"  value="<?php echo $hrSaidaAlmoco['hr_saida_almoco']?>" type='text' class="form-control input-lg" />
                         </div>
                     </div>
                 </div>
@@ -74,7 +74,7 @@ include 'dado_relatorio.php';
                     <h4>Horário de Chegada (Almoço):</h4>
                     <div class="form-group">
                         <div class='input-group date'>
-                            <input name="hr_chegada_almoco"  value="<?php echo $buscaDados['hr_chegada_almoco']?>" type='text' class="form-control input-lg" />
+                            <input name="hr_chegada_almoco"  value="<?php echo $hrChegadaAlmoco['hr_chegada_almoco']?>" type='text' class="form-control input-lg" />
                         </div>
                     </div>
                 </div>

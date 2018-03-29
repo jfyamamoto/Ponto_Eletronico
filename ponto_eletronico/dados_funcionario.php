@@ -1,29 +1,23 @@
 <?php
+    include 'conexao.php';
 
      //Validação
 
-    if ((!empty($_POST['matricula'])) && (!empty($_POST['nome'])) && (!empty($_POST['cargo']))){
+    if ((!empty($_POST['matricula'])) && (!empty($_POST['nome'])) && (!empty($_POST['idade'])) && (!empty($_POST['telefone'])) && (!empty($_POST['cargo']))){
 
-    //Conexao com Banco de Dados
-
-    $host = 'localhost';
-    $user = 'root';
-    $senha = '0420';
-    $bd = 'db_ponto_eletronico';
-
-    $conexao=mysqli_connect($host, $user, $senha, $bd);
-
-
+    
     //Parametros do Cadastro de Funcionario
 
     $recMatricula = $_POST['matricula'];
     $recNome = $_POST['nome'];
+    $recIdade = $_POST['idade'];
+    $recTelefone = $_POST['telefone'];    
     $recCargo = $_POST['cargo'];
     
     //Inserindo dados do Cadastro de Funcionario no Banco
 
-    $sql = "INSERT INTO `tb_funcionario` (`matricula`, `nome`, `cargo`) 
-            VALUES ('$recMatricula', '$recNome', '$recCargo')"; 
+    $sql = "INSERT INTO tb_funcionario (`matricula`, `nome`, `idade`, `telefone`, `cargo`) 
+            VALUES ('$recMatricula', '$recNome', '$recIdade', '$recTelefone','$recCargo')"; 
      
     $query = mysqli_query($conexao, $sql);
 
@@ -49,7 +43,7 @@
         
     echo 
         '<script>
-            alert("Todos os campos obrigadorios!");
+            alert("Todos os campos são obrigadorios!");
             window.location.href = "cadastro_funcionario.php";
         </script>';
 }

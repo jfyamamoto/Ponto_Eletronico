@@ -1,3 +1,8 @@
+<?php
+    include 'conexao.php';
+?>
+
+
 <!DOCTYPE html>
 
 <html lang="pt-br">
@@ -35,6 +40,17 @@
     				<h4>Nome Completo:</h4>
     				<input name="nome" type='text' class="form-control input-lg" />
     			</div>
+    			<div class="col-sm-4">
+    				<h4>Idade:</h4>
+    				<input name="idade" type='text' class="form-control input-lg"/>
+    			</div>
+    		</div>
+            
+            <div class="form-group">
+                <div class="col-sm-4">
+    				<h4>Telefone:</h4>
+    				<input name="telefone" type='text' class="form-control input-lg" />
+    			</div>
                 <div class="col-sm-4">
                     <h4>Cargo:</h4>
                     <input name="cargo" type='text' class="form-control input-lg"/>
@@ -42,7 +58,7 @@
     		</div>
             
         <form>
-            <div class="col-sm-3">
+            <div class="col-sm-4">
                 <h4>Gravar Funcionario:</h4>
                 <input type="submit" value="Gravar" class="btn btn-primary btn-block btn-lg"/>
             </div>   
